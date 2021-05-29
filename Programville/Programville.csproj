@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{921E65FD-E756-4B55-8401-AA4CBB1D1EDE}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Programville</RootNamespace>
+    <AssemblyName>Programville</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System">
+      <HintPath>..\..\..\..\..\..\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.7.2\System.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Admin\FrmTeste.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmTeste.Designer.cs">
+      <DependentUpon>FrmTeste.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\EditorIntrebari.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\EditorIntrebari.Designer.cs">
+      <DependentUpon>EditorIntrebari.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmCreatorTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmCreatorTest.Designer.cs">
+      <DependentUpon>FrmCreatorTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\FrmHomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\FrmHomeAdmin.Designer.cs">
+      <DependentUpon>FrmHomeAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FrmChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FrmChangePassword.Designer.cs">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FrmEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FrmEditProfile.Designer.cs">
+      <DependentUpon>FrmEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FrmHomeScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FrmHomeScreen.Designer.cs">
+      <DependentUpon>FrmHomeScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI\FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI\FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LoginUI\FrmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="LoginUI\FrmRegister.Designer.cs">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="User\FrmRezolvaTest.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="User\FrmRezolvaTest.Designer.cs">
+      <DependentUpon>FrmRezolvaTest.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Intrebare.cs" />
+    <Compile Include="Admin\ManageMaterii.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageMaterii.Designer.cs">
+      <DependentUpon>ManageMaterii.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\ManageUtilizatori.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Admin\ManageUtilizatori.Designer.cs">
+      <DependentUpon>ManageUtilizatori.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainDatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>MainDatabaseDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Materie.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Controls\RadioBoxWithTextBox.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\RadioBoxWithTextBox.Designer.cs">
+      <DependentUpon>RadioBoxWithTextBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Raspuns.cs" />
+    <Compile Include="Objects\Test.cs" />
+    <Compile Include="Controls\TestPreview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TestPreview.Designer.cs">
+      <DependentUpon>TestPreview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TestPreviewAdmin.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TestPreviewAdmin.Designer.cs">
+      <DependentUpon>TestPreviewAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Objects\Utilizator.cs" />
+    <EmbeddedResource Include="Admin\EditorIntrebari.resx">
+      <DependentUpon>EditorIntrebari.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmCreatorTest.resx">
+      <DependentUpon>FrmCreatorTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmTeste.resx">
+      <DependentUpon>FrmTeste.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\FrmHomeAdmin.resx">
+      <DependentUpon>FrmHomeAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FrmChangePassword.resx">
+      <DependentUpon>FrmChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FrmEditProfile.resx">
+      <DependentUpon>FrmEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FrmHomeScreen.resx">
+      <DependentUpon>FrmHomeScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI\FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LoginUI\FrmRegister.resx">
+      <DependentUpon>FrmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageMaterii.resx">
+      <DependentUpon>ManageMaterii.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Admin\ManageUtilizatori.resx">
+      <DependentUpon>ManageUtilizatori.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="User\FrmRezolvaTest.resx">
+      <DependentUpon>FrmRezolvaTest.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Controls\RadioBoxWithTextBox.resx">
+      <DependentUpon>RadioBoxWithTextBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestPreview.resx">
+      <DependentUpon>TestPreview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TestPreviewAdmin.resx">
+      <DependentUpon>TestPreviewAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="MainDatabaseDataSet.xsc">
+      <DependentUpon>MainDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="MainDatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>MainDatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="MainDatabaseDataSet.xss">
+      <DependentUpon>MainDatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="MainDatabase.mdf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MainDatabase_log.ldf">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <DependentUpon>MainDatabase.mdf</DependentUpon>
+    </Content>
+    <None Include="Resources\edit_32px.png" />
+    <None Include="Resources\trash_32px.png" />
+    <None Include="Resources\upload_32px.png" />
+    <None Include="Resources\icons8_trash_32.png" />
+    <None Include="Resources\icons8_trash_16.png" />
+    <None Include="Resources\icons8_pdf_32.png" />
+    <None Include="Resources\icons8_eye_checked_32.png" />
+    <None Include="Resources\icons8_enter_mac_key_32.png" />
+    <None Include="Resources\icons8_add_new_32.png" />
+    <None Include="Resources\icons8_feed_in_48.png" />
+    <None Include="Resources\icons8_eye_48.png" />
+    <None Include="Resources\icons8_left_48.png" />
+    <None Include="Resources\icons8_right_48.png" />
+    <None Include="Resources\icons8_enter_key_48.png" />
+    <None Include="Resources\icons8_add_new_48.png" />
+    <None Include="Resources\icons8_save_48.png" />
+    <None Include="Resources\icons8_save_16.png" />
+    <None Include="Resources\icons8_save_32.png" />
+    <None Include="Resources\question-Icon.png" />
+    <None Include="Resources\deletepng.png" />
+    <None Include="Resources\administrare-users.png" />
+    <None Include="Resources\admin-icon_64.png" />
+    <None Include="Resources\materiale.png" />
+    <None Include="Resources\icons8_upload_32.png" />
+    <None Include="Resources\upload_96px.png" />
+    <None Include="Resources\tags_96px.png" />
+    <None Include="Resources\statistic-users.png" />
+    <None Include="Resources\test-image.png" />
+    <None Include="Resources\icons8_edit_profile_32.png" />
+    <None Include="Resources\log-off_32.png" />
+    <None Include="Resources\login-form_32.png" />
+    <None Include="Resources\email-png.png" />
+    <None Include="Resources\securitate-img.png" />
+    <None Include="Resources\utilizator-img.png" />
+    <None Include="Resources\app-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
