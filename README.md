@@ -1,6 +1,6 @@
 # Programville-InfoEducatie
 
-Prize mention at "InfoEducatie" 2020 Contest
+Prize mention at "InfoEducatie" 2021 Contest - Finalist
 
 # Description
 Making a quiz application for testing knowledge in various fields gives the user the opportunity to expand his knowledge and improve himself in the field that he activates. The application can be used by schools to companies that want to increase the performance of their employees. Each test can be customized by an administrator account and uploaded for solving. The statistics, available to both administrators and users, provide in-depth knowledge that needs to be deepened.
