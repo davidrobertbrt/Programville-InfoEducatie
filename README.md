@@ -1,17 +1,19 @@
 # Programville-InfoEducatie
 
-# Descriere
-Realizarea unei aplicații de teste grilă pentru testarea cunoștințelor din diverse domenii oferă utilizatorului posibilitatea de a își extinde cunoștințele și de a se perfecționa în domeniul pe care îl activează. Aplicația poate fi folosită de școli până la companii ce doresc să crească performanța angajaților săi. Fiecare test poate fi personalizat de către un cont de administrator și încărcate spre rezolvare. Statistica, disponibilă atât administratorilor cât și utilizatorilor, oferă în detaliu cunoștințele care trebuie aprofundate.
-Acest proiect a fost realizat cu scop didactic. Programul conține, la momentul realizării, posibilitatea de a crea și edita teste, de a organiza acestea în funcție de materii. Pe baza rezolvărilor realizate de utilizatori, statistica este construită atât pentru fiecare utilizator cât și pentru toți ceilalți. Fiecare test este prezentat sub forma unui card informativ, de unde utilizatorul poate vedea atât descrierea , cât și imaginea de prezentare. Astfel, interfața devine prietenoasă și captează atenția utilizatorului.
+Prize mention at "InfoEducatie" 2020 Contest
 
-# Tehnologii
-Programville este o aplicație realizată în WinForms împreună cu serverul de baze de date Microsoft SQL. Astfel, aplicația este protejată împotriva oricărui atac fiind criptată, iar portarea acesteia este foarte ușoară, informațiile putând fi stocate atât local cât și online. Structura bazei de date este legată de către proiect prin intermediul claselor special create.
+# Description
+Making a quiz application for testing knowledge in various fields gives the user the opportunity to expand his knowledge and improve himself in the field that he activates. The application can be used by schools to companies that want to increase the performance of their employees. Each test can be customized by an administrator account and uploaded for solving. The statistics, available to both administrators and users, provide in-depth knowledge that needs to be deepened.
+This project was made for educational purposes. The program contains, at the time of creation, the possibility to create and edit tests, to organize them according to subjects. Based on the solutions made by the users, statistics are built both for each user and for everyone else. Each test is presented in the form of an information card, where the user can see both the description and the presentation image. Thus, the interface becomes friendly and captures the user's attention.
 
-# Cerinte sistem
-•	Sistem de operare: Windows 10
-•	Procesor: x86 sau x64
-•	RAM: 512 MB (minim), 1 GB (recomandat)
-•	Hard disk: 400MB necesari pentru instalare
+# Arhitecture
+Programville is an application built in WinForms together with the Microsoft SQL database server. The database structure is bound by the project through specially created classes (MVC Arhitecture)
+
+# System requirements
+•	Operating System: Windows 10 version 2004, up to Windows 11 version 22H2
+•	Procesor: x86 (only Windows 10) or x64
+•	RAM: 512 MB
+•	Hard disk: 400MB (SATA HDD / SSD / NVME SSD)
 •	.NET Framework 4.7.2
 •	Microsoft SQL Server
 
